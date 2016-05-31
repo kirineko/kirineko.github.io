@@ -191,7 +191,7 @@ public function findfirstAction()
 }
 ```
 
-**3.findBy<属性>方法**
+**3.findBy\<属性\>方法**
 
 在Phalcon框架中支持findBy<属性>的扩展查询，在上例中，可以把条件语句改为findFirstByUsername,同时省略查询条件,结果不变。
 
