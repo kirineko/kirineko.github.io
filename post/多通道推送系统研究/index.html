@@ -131,7 +131,7 @@ push,
 
 <h4 id="step-1-查询数据库获取push-cid">Step 1 : 查询数据库获取push_cid</h4>
 
-<pre><code class="language-perl">$push_channel = $this-&gt;push_channel;
+<pre><code class="language-php">$push_channel = $this-&gt;push_channel;
 $push = UserPush::findFirst(&quot;user_id='{$user_id}' AND role='{$user_role}' AND app_type = '{$app_type}' AND push_channel = '{$push_channel}'&quot;);
 
 $this-&gt;push_params = [$push['push_cid'],$msg,$opts];
@@ -145,7 +145,7 @@ $this-&gt;push_params = [$push['push_cid'],$msg,$opts];
 
 <h4 id="step-2-初始化第三方推送">Step 2 : 初始化第三方推送</h4>
 
-<pre><code class="language-perl">$config = \Phalcon\DI::getDefault()-&gt;getConfig()-&gt;huawei_push-&gt;toArray();
+<pre><code class="language-php">$config = \Phalcon\DI::getDefault()-&gt;getConfig()-&gt;huawei_push-&gt;toArray();
 $this-&gt;push_config = $config[$app_type][$device_name][$develop_status];
 $this-&gt;app_id = $this-&gt;push_config['appId'];
 $this-&gt;app_secret = $this-&gt;push_config['appSecret'];
@@ -161,7 +161,7 @@ $this-&gt;sdk = (new HwPushSDK($this-&gt;push_config['appId'], $this-&gt;push_co
 
 <h4 id="step-3-第三方推送初始化">Step 3 : 第三方推送初始化</h4>
 
-<pre><code class="language-perl">/**
+<pre><code class="language-php">/**
  * HwPushSDK constructor.
  * @param string $app_id
  * @param string $app_secret
@@ -179,7 +179,7 @@ public function __construct($app_id = '', $app_secret = ''){
 
 <h4 id="step-4-调用第三方sdk执行推送">Step 4 : 调用第三方SDK执行推送</h4>
 
-<pre><code class="language-perl">$message-&gt;title($title);
+<pre><code class="language-php">$message-&gt;title($title);
 $message-&gt;description($desc);
 $message-&gt;payload(json_encode($msg));
 $message-&gt;extra('custom',json_encode($msg));
