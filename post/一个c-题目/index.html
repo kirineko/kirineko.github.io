@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="cpp,
+">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="一个C&#43;&#43;题目" />
+<meta property="og:site_name" content="kirineko blogs" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://kirineko.github.io/post/%E4%B8%80%E4%B8%AAc-%E9%A2%98%E7%9B%AE/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2016-05-08
+" /> <meta property="article:modified_time" content="2016-05-08
+" />
+
+
+<meta property="article:tag" content="cpp" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@siegerts" />
+<meta name="twitter:creator" content="@siegerts" />
+<meta
+  name="twitter:title"
+  content="一个C&#43;&#43;题目 | kirineko blogs"
+/>
+<meta
+  name="twitter:description"
+  content="class String { public: //构造函数，给字符串str分配100个字节的存储空间，即字符串支持存储的最大长度为100 String() { this-&gt;str = (char*)malloc(100); } void setString(char *str); //输入字符串,也可以写成构造函数 int getLength(); //返回字符串长度 char* getString(); //返回内容 private: char *str; }; void String::setString(char* str) { strcpy(this-&gt;str, str); } int String::getLength() { return strlen(this-&gt;str); } char* String::getString() { char *s = (char*)malloc(100); strcpy(s,this-&gt;str); return s; } class Editstring : public String { private: unsigned int cursor; //定义一个指示位置的光标 public: /** * 正常情况应判断cur是否&gt;=0,&lt;length(str),此处主要表现算法，省略之, * 后续插入替换也应当先判断光标的位置，本题省略错误处理 */ void setCursor(int cur) { this-&gt;cursor = cur; } bool insert(char* substr); //在光标位置插入字符串 bool replace(int num, char* substr); //将光标的num个字符组成的字符串替换成str bool remove(int num); //在光标处删除num个字符组成的字符串 }; bool Editstring::insert(char* substr) { int sublength = strlen(substr); //要插入子串的长度 int length = strlen(this-&gt;str); //原始字符串长度 for(int i=length&#43;sublength-1; i&gt;this-&gt;cursor&#43;sublength; i--) { this-&gt;str[i] = this-&gt;str[i-sublength]; } for(int j=1; j&lt;=sublength; j&#43;&#43;) { this-&gt;str[this-&gt;cursor&#43;j] = substr[j-1]; } return true; } bool Editstring::replace(int num, char* substr) { int sublength = strlen(substr); int length = strlen(this-&gt;str); for(int i=this-&gt;cursor &#43; num &#43; 1; i &lt;= length; i&#43;&#43;) { this-&gt;str[i - num] = this-&gt;str[i]; } this-&gt;insert(substr); return true; } bool Editstring::remove(int num) { int length = strlen(this-&gt;str); for(int i=this-&gt;cursor; i&lt;= length; i&#43;&#43;) { this-&gt;str[i-num] = this-&gt;str[i]; } return true; } int main() { String s1; char c1[] = &quot;hello world&quot;; s1.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="http://kirineko.github.io/post/%E4%B8%80%E4%B8%AAc-%E9%A2%98%E7%9B%AE/" />
+
+
+
+    <title>一个C&#43;&#43;题目</title>
+    <link rel="canonical" href="http://kirineko.github.io/post/%E4%B8%80%E4%B8%AAc-%E9%A2%98%E7%9B%AE/" />
+
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="http://kirineko.github.io/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="http://kirineko.github.io/" class="b bb bw1 pb1 no-underline black">kirineko blogs</a>
+  <span class="b"> / </span>
+  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">一个C&#43;&#43;题目</h1>
+    <span class="f6 gray">May 8, 2016</span>
+
+      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        <pre><code class="language-cpp">class String
+{
+public:
+    //构造函数，给字符串str分配100个字节的存储空间，即字符串支持存储的最大长度为100
+    String() {
+        this-&gt;str = (char*)malloc(100);
+    }
+    void setString(char *str);  //输入字符串,也可以写成构造函数
+    int getLength();  //返回字符串长度
+    char* getString(); //返回内容
+private:
+    char *str;
+};
+
+void String::setString(char* str)
+{
+    strcpy(this-&gt;str, str);
+}
+
+int String::getLength()
+{
+    return strlen(this-&gt;str);
+}
+
+char* String::getString()
+{
+    char *s = (char*)malloc(100);
+    strcpy(s,this-&gt;str);
+    return s;
+}
+
+class Editstring : public String
+{
+private:
+    unsigned int cursor; //定义一个指示位置的光标
+public:
+    /**
+     * 正常情况应判断cur是否&gt;=0,&lt;length(str),此处主要表现算法，省略之,
+     * 后续插入替换也应当先判断光标的位置，本题省略错误处理
+     */
+    void setCursor(int cur) {
+        this-&gt;cursor = cur;
+    }
+
+    bool insert(char* substr); //在光标位置插入字符串
+    bool replace(int num, char* substr); //将光标的num个字符组成的字符串替换成str
+    bool remove(int num); //在光标处删除num个字符组成的字符串
+};
+
+bool Editstring::insert(char* substr)
+{
+    int sublength = strlen(substr); //要插入子串的长度
+    int length = strlen(this-&gt;str); //原始字符串长度
+    for(int i=length+sublength-1; i&gt;this-&gt;cursor+sublength; i--)
+    {
+        this-&gt;str[i] = this-&gt;str[i-sublength];
+    }
+    for(int j=1; j&lt;=sublength; j++)
+    {
+        this-&gt;str[this-&gt;cursor+j] = substr[j-1];
+    }
+    return true;
+}
+
+bool Editstring::replace(int num, char* substr)
+{
+    int sublength = strlen(substr);
+    int length = strlen(this-&gt;str);
+    for(int i=this-&gt;cursor + num + 1; i &lt;= length; i++)
+    {
+        this-&gt;str[i - num] = this-&gt;str[i];
+    }
+    this-&gt;insert(substr);
+    return true;
+}
+
+bool Editstring::remove(int num)
+{
+    int length = strlen(this-&gt;str);
+    for(int i=this-&gt;cursor; i&lt;= length; i++)
+    {
+        this-&gt;str[i-num] = this-&gt;str[i];
+    }
+    return true;
+}
+
+int main()
+{
+    String s1;
+    char c1[] = &quot;hello world&quot;;
+    s1.setString(c1);
+
+    std::cout&lt;&lt; s1.getLength() &lt;&lt; std::endl;
+    std::cout&lt;&lt; s1.getString() &lt;&lt; std::endl;
+
+    Editstring s2;
+    s2.setString(c1);
+    s2.setCursor(5);
+
+    // char c2[] = &quot;miao &quot;;
+    // s2.insert(c2);
+
+    // char c3[] = &quot;liyi&quot;;
+    // s2.replace(2,c3);
+
+    s2.remove(3);
+    std::cout&lt;&lt; s2.getString() &lt;&lt;std::endl;
+
+
+    return 0;
+}
+</code></pre>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: May 8, 2016. Published at: 2016-05-08.">
+        
+      </span>
+
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2015-2019 <a href='https://github.com/kirineko/'>kirineko</a>.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>

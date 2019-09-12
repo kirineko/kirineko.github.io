@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="php,
+push,
+">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="多通道推送系统研究" />
+<meta property="og:site_name" content="kirineko blogs" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://kirineko.github.io/post/%E5%A4%9A%E9%80%9A%E9%81%93%E6%8E%A8%E9%80%81%E7%B3%BB%E7%BB%9F%E7%A0%94%E7%A9%B6/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2015-11-26
+" /> <meta property="article:modified_time" content="2015-11-26
+" />
+
+
+<meta property="article:tag" content="php" />
+<meta property="article:tag" content="push" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@siegerts" />
+<meta name="twitter:creator" content="@siegerts" />
+<meta
+  name="twitter:title"
+  content="多通道推送系统研究 | kirineko blogs"
+/>
+<meta
+  name="twitter:description"
+  content="上周开发多通道推送遇到了很多&rdquo;惊喜&rdquo;，在这里总结一下：
+ 本系列共分为3篇，该篇为第一篇：基本原理篇。
+ 基本原理篇 先来张图好了:
+ Bind用户推送数据:首先移动客户端执行bind操作，将客户端相关信息比如uuid,push_cid,user_id,user_type,app_type,user_role等信息绑定到服务器，写入数据库表user_push.以上信息由客户端生成，并在用户登陆app时写入数据库。
+ 服务器推送: 服务器根据user_id,user_role,app_type查询user_push表，找到push_channel和push_cid,根据push_channel选择进入哪一条push通道，通过push_cid告知第三方推送服务push到哪台设备的客户端。
+ 调用第三方推送: 第三份推送本质上提供的是HTTP Web Service接口，并在此基础上封装了专用的SDK供开发者调用，不同服务所封装的sdk也不尽相同。但基本是类似的，第三方推送服务需要从服务器端验证appKey，secretKey等信息，确保是在它那里注册的服务器发送的推送请求，然后从服务器读取cid，message，options等信息。
+ 第三方推送执行推送: 第三方推送根据读取的cid，message，options等信息，决定推送的消息类型，推送的消息内容，推送的过期保存时间，是否重发等。
+  代码解释 Step 1 : 查询数据库获取push_cid $push_channel = $this-&gt;push_channel; $push = UserPush::findFirst(&quot;user_id=&#39;{$user_id}&#39; AND role=&#39;{$user_role}&#39; AND app_type = &#39;{$app_type}&#39; AND push_channel = &#39;{$push_channel}&#39;&quot;); $this-&gt;push_params = [$push[&#39;push_cid&#39;],$msg,$opts];   UserPush是Phalcon框架中的Model类，提供了一些操作数据库的方法，同时也支持PDO访问数据库 findFirst()方法以对象形式返回模型数据查询的第一条结果，参数为查询条件。 将$push_cid,$msg,$opts三个参数信息传给制定的第三方sdk  Step 2 : 初始化第三方推送 $config = \Phalcon\DI::getDefault()-&gt;getConfig()-&gt;huawei_push-&gt;toArray(); $this-&gt;push_config = $config[$app_type][$device_name][$develop_status]; $this-&gt;app_id = $this-&gt;push_config[&#39;appId&#39;]; $this-&gt;app_secret = $this-&gt;push_config[&#39;appSecret&#39;]; $this-&gt;initSdkConf($app_type,$device_type,$develop_status); $this-&gt;sdk = (new HwPushSDK($this-&gt;push_config[&#39;appId&#39;], $this-&gt;push_config[&#39;appSecret&#39;]));   初始化第三方sdk，在Phalcon框架中\Phalcon\DI::getDefault()获取di，需要先把相关配置文件路径写入di，然后通过di调用getConfig获取配置文件中的数组 获取到配置信息以后，就可将appId，appSecret等信息读出用于初始化第三方sdk  Step 3 : 第三方推送初始化 /** * HwPushSDK constructor.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="http://kirineko.github.io/post/%E5%A4%9A%E9%80%9A%E9%81%93%E6%8E%A8%E9%80%81%E7%B3%BB%E7%BB%9F%E7%A0%94%E7%A9%B6/" />
+
+
+
+    <title>多通道推送系统研究</title>
+    <link rel="canonical" href="http://kirineko.github.io/post/%E5%A4%9A%E9%80%9A%E9%81%93%E6%8E%A8%E9%80%81%E7%B3%BB%E7%BB%9F%E7%A0%94%E7%A9%B6/" />
+
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="http://kirineko.github.io/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="http://kirineko.github.io/" class="b bb bw1 pb1 no-underline black">kirineko blogs</a>
+  <span class="b"> / </span>
+  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">多通道推送系统研究</h1>
+    <span class="f6 gray">November 26, 2015</span>
+
+      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        
+
+<p>上周开发多通道推送遇到了很多&rdquo;惊喜&rdquo;，在这里总结一下：</p>
+
+<blockquote>
+<p>本系列共分为3篇，该篇为第一篇：基本原理篇。</p>
+</blockquote>
+
+<h3 id="基本原理篇">基本原理篇</h3>
+
+<p>先来张图好了:</p>
+
+<p><img src="/img/in-post/3.bmp" width="600" height="400" alt="基本原理"/></p>
+
+<ol>
+<li><p>Bind用户推送数据:首先移动客户端执行bind操作，将客户端相关信息比如uuid,push_cid,user_id,user_type,app_type,user_role等信息绑定到服务器，写入数据库表user_push.以上信息由客户端生成，并在用户登陆app时写入数据库。</p></li>
+
+<li><p>服务器推送: 服务器根据user_id,user_role,app_type查询user_push表，找到push_channel和push_cid,根据push_channel选择进入哪一条push通道，通过push_cid告知第三方推送服务push到哪台设备的客户端。</p></li>
+
+<li><p>调用第三方推送: 第三份推送本质上提供的是HTTP Web Service接口，并在此基础上封装了专用的SDK供开发者调用，不同服务所封装的sdk也不尽相同。但基本是类似的，第三方推送服务需要从服务器端验证appKey，secretKey等信息，确保是在它那里注册的服务器发送的推送请求，然后从服务器读取cid，message，options等信息。</p></li>
+
+<li><p>第三方推送执行推送: 第三方推送根据读取的cid，message，options等信息，决定推送的消息类型，推送的消息内容，推送的过期保存时间，是否重发等。</p></li>
+</ol>
+
+<h3 id="代码解释">代码解释</h3>
+
+<h4 id="step-1-查询数据库获取push-cid">Step 1 : 查询数据库获取push_cid</h4>
+
+<pre><code class="language-perl">$push_channel = $this-&gt;push_channel;
+$push = UserPush::findFirst(&quot;user_id='{$user_id}' AND role='{$user_role}' AND app_type = '{$app_type}' AND push_channel = '{$push_channel}'&quot;);
+
+$this-&gt;push_params = [$push['push_cid'],$msg,$opts];
+</code></pre>
+
+<ul>
+<li><code>UserPush</code>是Phalcon框架中的Model类，提供了一些操作数据库的方法，同时也支持PDO访问数据库</li>
+<li><code>findFirst()</code>方法以对象形式返回模型数据查询的第一条结果，参数为查询条件。</li>
+<li>将$push_cid,$msg,$opts三个参数信息传给制定的第三方sdk</li>
+</ul>
+
+<h4 id="step-2-初始化第三方推送">Step 2 : 初始化第三方推送</h4>
+
+<pre><code class="language-perl">$config = \Phalcon\DI::getDefault()-&gt;getConfig()-&gt;huawei_push-&gt;toArray();
+$this-&gt;push_config = $config[$app_type][$device_name][$develop_status];
+$this-&gt;app_id = $this-&gt;push_config['appId'];
+$this-&gt;app_secret = $this-&gt;push_config['appSecret'];
+
+$this-&gt;initSdkConf($app_type,$device_type,$develop_status);
+$this-&gt;sdk = (new HwPushSDK($this-&gt;push_config['appId'], $this-&gt;push_config['appSecret']));
+</code></pre>
+
+<ul>
+<li>初始化第三方sdk，在Phalcon框架中\Phalcon\DI::getDefault()获取di，需要先把相关配置文件路径写入di，然后通过di调用getConfig获取配置文件中的数组</li>
+<li>获取到配置信息以后，就可将appId，appSecret等信息读出用于初始化第三方sdk</li>
+</ul>
+
+<h4 id="step-3-第三方推送初始化">Step 3 : 第三方推送初始化</h4>
+
+<pre><code class="language-perl">/**
+ * HwPushSDK constructor.
+ * @param string $app_id
+ * @param string $app_secret
+ */
+public function __construct($app_id = '', $app_secret = ''){
+    $this-&gt;appId = $app_id;
+    $this-&gt;appSecret = $app_secret;
+    $this-&gt;push_uri =\Phalcon\DI::getDefault()-&gt;getConfig()-&gt;hw_push_url;
+}
+</code></pre>
+
+<ul>
+<li>第三方sdk构造函数，主要用来读取appKey和secretKey进行服务端验证</li>
+</ul>
+
+<h4 id="step-4-调用第三方sdk执行推送">Step 4 : 调用第三方SDK执行推送</h4>
+
+<pre><code class="language-perl">$message-&gt;title($title);
+$message-&gt;description($desc);
+$message-&gt;payload(json_encode($msg));
+$message-&gt;extra('custom',json_encode($msg));
+$message-&gt;build();
+
+$targetMessage = new TargetedMessage();
+$targetMessage-&gt;setTarget($regId, TargetedMessage::TARGET_TYPE_REGID);
+$targetMessage-&gt;setMessage($message);
+
+$result =  $sender-&gt;send($message, $regId, 0);
+</code></pre>
+
+<ul>
+<li>根据第三方SDK进行推送</li>
+<li>小米推送需要区分消息类型：透传还是通知栏</li>
+<li>设定description，title，payload，extra等信息</li>
+<li>最后小米推送将根据message，regId进行推送</li>
+</ul>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: November 26, 2015. Published at: 2015-11-26.">
+        
+      </span>
+
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2015-2019 <a href='https://github.com/kirineko/'>kirineko</a>.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>

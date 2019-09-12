@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Me on kirineko blogs</title>
+    <link>http://kirineko.github.io/tags/me/</link>
+    <description>Recent content in Me on kirineko blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2015-2019 &lt;a href=&#39;https://github.com/kirineko/&#39;&gt;kirineko&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sat, 11 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://kirineko.github.io/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Love Yuko</title>
+      <link>http://kirineko.github.io/post/i-love-yuko/</link>
+      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://kirineko.github.io/post/i-love-yuko/</guid>
+      <description>有时候，沉浸在自我的世界中，
+幻想着，幻想着。
+幻想着有一天与你能够一起飞，
+飞到很高很高的地方，
+俯瞰这个世界的风景。
+这个自我构建的世界，
+理想的如诗如画，
+就好像只有你和我就能成为这个世界的支点一样。
+无论你处于哪条世界线，
+请记得：还有我在！
+回想起这些中二的宣言，
+总是将其映射为你和我。
+即使是现在，也依然这样想。
+爱因斯坦的相对论，有时是那么的浪漫，
+而有时却又是那么的让人伤感呢。
+yuko,大好き！</description>
+    </item>
+    
+    <item>
+      <title>新年试更</title>
+      <link>http://kirineko.github.io/post/%E6%96%B0%E5%B9%B4%E8%AF%95%E6%9B%B4/</link>
+      <pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://kirineko.github.io/post/%E6%96%B0%E5%B9%B4%E8%AF%95%E6%9B%B4/</guid>
+      <description>1. Hello hello,everyone! So long not update!
+好久没有更新惹，可见去年自5月以来是有多么地忙~或者说是我懒懒的！很多目标没有达成吧；一年以来亦不知是进步了还是退步了！犹记得去年这个时候在疯狂地追Steins;Gate 0！Steins;Gate果然是大神作，现在还想再看一遍！结果发现了新药，开心O(∩_∩)O~~_)
+2. Last Year 2016 2016，还是作了不少事情的吧，大概！按时间顺序如下，
+ 完成了指纹认证系统的论文的中文版，几经周折顺利通过答辩 看完了Steins;Gate 0的中文剧情 重构了博客网站，通过网易云协作分享了多篇内容，后弃用改为Evernote 学习了PHP知识以及Phaclon框架，学习了ORM读写数据库，JSON，XML数据序列化，HTTP接口数据请求与解析curl，MySQL数据库设计，Web会话管理，API权限认证，短信验证码基本知识，Redis缓存使用基础知识等等！ 系统学习了前端的基础知识，尤其是CSS部分的知识，掌握了百度EDP的构建方法 重新系统学习了数据结构的基础知识，采用实际代码实现了大量数据结构 重构了穆友之家的设计文档和基本实现框架，在Digital Ocean上采用LNMR+Unicorn部署了相关应用 学习了Matlab的部分知识 学习了linux shell, awk, grep, git的部分知识  3. Plan in 2017  学习Hadoop以及Hbase的基础知识 学习Linux, Docker以及自动化运维的相关知识 深入学习PHP以及相关Web技术，学习框架、ORM、缓存、MySQL等知识 学习Python、Ruby等其它P族语言 深入学习前端知识，尤其是JavaScript部分 改用LNMP完成穆友之家的设计和开发  以上，
+2017年2月9日</description>
+    </item>
+    
+    <item>
+      <title>Never be sad and to be yourself</title>
+      <link>http://kirineko.github.io/post/never-be-sad-and-to-be-yourself/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://kirineko.github.io/post/never-be-sad-and-to-be-yourself/</guid>
+      <description>就连明天的天气也【还是不去知道的好】，这样想着放下了伞，
+若是如泪般的雨水，便能改写这过分温柔的谎言。
+被封在暗箱中天空的片段
+也不能嵌入那未来的拼图。
+sad，好久没哭了，想哭；
+快乐来源于单纯，来源于专注；失去他们仅仅几个小时，就如此伤心。
+I want to be myself and never sad.
+I will to be myself and never sad.
+16点开始，就没有在工作了，没有写PHP，也没有学习Ruby.
+心中的小小喜悦与悸动充满内心。
+多年没有写C++了，边学习边写代码，真的是很开心呢。
+从不与人争辩的我，内心却因为代码而不再平静。
+他是一名黑魔法师，他喜欢黑魔法的简单，粗暴。
+他不断的修行，修行。不为了得到什么，只为了得到快乐。
+这是一种来自于修行本身的快乐。
+专注于修行的他，不喜欢想别的任何事情，也不愿意卷入纷纷扰扰的政治斗争中。
+他像一个道士一样俯瞰风景。高处不胜寒。
+很少有人向他提出异议，孤独充斥着他。
+他喜欢别人提出异议，这样他才可以做的更好。
+他坚信着：不争则无人能与之争。
+他的行为遵守着他的信念。
+他无论如何也要坚守着，
+坚守着他的信念。
+他害怕，他害怕失去信念的生活。
+他在这种状态下快乐着，
+大争之世，不争之人必有性命之忧。
+可是，他不愿意，并不是怕争不到，
+或许是怕别人争不到吧，或许是懒吧，或许是不愿意做脱离本心的事情吧，
+从研究生国家奖学金，到华为奖学金，
+如果不是机油和他吵架的话，可能也不会争取吧，
+但是争到了还是很开心呢。
+或许，经历了太多，他已经不会争了吧。
+积极的人生，消极的心态；
+积极的做事，消极的做人；
+遵循着兴趣，所以被认为是任性。
+说到底，也没有搞Java，没有搞C++，没有选择BAT
+他遵循着他的内心，
+却被无形的箱子约束着。
+他不去想别人，
+他不想去想别人，
+他不愿意去想别人。
+他只想做自己。
+他从来不评论别人，
+他不喜欢评论别人，
+他觉得他没有资格评价别人，
+他也不希望别人评价自己，
+他觉得别人没有资格评价自己。
+或许，这就是任性吧~
+他向着ruby社区，游戏社区不断的努力。
+以至于他以为这就是他梦想的全部。
+直到某一天
+他还在想着laravel和rails的关系，
+生活却不知不觉地迅速地被改变了，
+直到他已经发觉时，
+已经不记得那天晚上他研究laravel和rails时的心态了，
+命运所寻找的羁绊，</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://kirineko.github.io/about/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kirineko.github.io/about/</guid>
+      <description>我是谁 Hello,こんにちは！～我的名字叫小埋（kirineko，这是真的）。我是来自HUST的异端魔法师，使用简单易懂的现代魔法。HUST是一所带有传奇色彩的魔法学校。
+这里研究什么  这里什么都研究，就是不研究星际（－大雾－）——PLU
+“专业就是王道”——Friend
+ 好吧，还是正经一点儿，这里讨论以下几大主题：
+ 服务器端开发技术，主要是Ruby和PHP. (没办法，kirineko是一个ruby coder) 前端开发技术 Node.js Animate, Comic, Games Galgame? H!? Hはダメ！ Markdown, Latex, etc 形式化方法  我的梦想是什么 喵想搞游戏啊，我想独立制作小游戏，RPG Maker什么的～想成为海底囚人那样的独立游戏制作人，想制作一款类似“大海原与大海原”一样的游戏！然而，我太懒了，现在什么都不会喵，学习的技术也不是那么高大上，我认识的大神却早已在openCV等高大上的领域里越走越远。
+嘛，人生苦短，我用python.
+社区 希望未来还能在ACG社区和Open Source社区越走越远吧～就是这样子。</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://kirineko.github.io/post/about-me/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kirineko.github.io/post/about-me/</guid>
+      <description>我是谁 Hello,こんにちは！～我的名字叫小埋（kirineko，这是真的）。我是来自HUST的异端魔法师，使用简单易懂的现代魔法。HUST是一所带有传奇色彩的魔法学校。
+这里研究什么  这里什么都研究，就是不研究星际（－大雾－）——PLU
+“专业就是王道”——Friend
+ 好吧，还是正经一点儿，这里讨论以下几大主题：
+ 服务器端开发技术，主要是Ruby和PHP. (没办法，kirineko是一个ruby coder) 前端开发技术 Node.js Animate, Comic, Games Galgame? H!? Hはダメ！ Markdown, Latex, etc 形式化方法  我的梦想是什么 喵想搞游戏啊，我想独立制作小游戏，RPG Maker什么的～想成为海底囚人那样的独立游戏制作人，想制作一款类似“大海原与大海原”一样的游戏！然而，我太懒了，现在什么都不会喵，学习的技术也不是那么高大上，我认识的大神却早已在openCV等高大上的领域里越走越远。
+嘛，人生苦短，我用python.
+社区 希望未来还能在ACG社区和Open Source社区越走越远吧～就是这样子。</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://kirineko.github.io/post/introduction/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://kirineko.github.io/post/introduction/</guid>
+      <description>   世界上本来就没有魔法使这种东西，魔法更准确的说应该是魔术。魔法跟魔术可不一样，魔术这玩意的确是超脱常识的现象，但这却只是将常识可能发生的事换成非常识也能发生而已。没错。所以以前魔法师才会让人畏惧，且成为职业的一种。但现在就不同了，坦白说魔术根本是不必要的东西，在现代，魔法越来越少。因为人类无法达到的事，已经用双手就数得完了。所以据说现在可算是魔法师的，全世界也不过五人。—— Fate Stay Night
+  什么是魔法 这个问题上面那段名言已经解答了,所以说，现在来看，我们搞的只能称之为魔术，而我呢，也正在为成为一个合格乃至优秀的魔术使而努力。
+什么是现代魔法？ 其实就是现代魔术罢了。20多年以前的魔术使们，都喜欢写这样的咒语:
+#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;quot;Hello World&amp;quot;); return 0; }  这就是最为基本的古代魔法,然而由于古代魔法越来越难学，现在古代魔法使已经越来越少了，本喵的古代魔法能力也只有10分，至于上古神器Lisp，只有1分～真没办法呢～
+然而，现代魔法与古代魔法不同，现代魔法的代表如下所示:
+puts &amp;quot;这是简单易懂的现代魔法&amp;quot;  这就是简单易懂的现代魔法，在这里，我们讲讨论最为先进的简单易懂的现代魔法，从初窥门径到成为大师。来吧，加入xxx，大有可为！
+现代魔法讨论什么 现代魔法可不是那么简单的！！！！简单易懂的现代魔法讨论（包括但不局限于）以下内容：
+ PHP &amp;amp; Laravel Ruby JavaScript 如何成为优雅的人 如何编写优雅的代码 加入什么才能大有可为 为什么你们都说狂三比四糸乃萌 人生苦短，我用Python  如何联系我  电话: 13263284528 邮箱: 798360687@qq.com QQ: 798360687 微信: lichdespul Place: HUST YunYuan 6 Dong  最后还有什么要说的  生活在有ACG的时代真的是太好了呢～ 生活在移动互联网兴起的时代真的是太好了呢～ 成为一名魔法使真的是太好了呢～ 能遇见Key社真的是太好了呢～ 能进入HUST学习魔术真的是太好了呢～  好东西 </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpp on kirineko blogs</title>
+    <link>http://kirineko.github.io/tags/cpp/</link>
+    <description>Recent content in cpp on kirineko blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2015-2019 &lt;a href=&#39;https://github.com/kirineko/&#39;&gt;kirineko&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sun, 08 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://kirineko.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一个C&#43;&#43;题目</title>
+      <link>http://kirineko.github.io/post/%E4%B8%80%E4%B8%AAc-%E9%A2%98%E7%9B%AE/</link>
+      <pubDate>Sun, 08 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://kirineko.github.io/post/%E4%B8%80%E4%B8%AAc-%E9%A2%98%E7%9B%AE/</guid>
+      <description>class String { public: //构造函数，给字符串str分配100个字节的存储空间，即字符串支持存储的最大长度为100 String() { this-&amp;gt;str = (char*)malloc(100); } void setString(char *str); //输入字符串,也可以写成构造函数 int getLength(); //返回字符串长度 char* getString(); //返回内容 private: char *str; }; void String::setString(char* str) { strcpy(this-&amp;gt;str, str); } int String::getLength() { return strlen(this-&amp;gt;str); } char* String::getString() { char *s = (char*)malloc(100); strcpy(s,this-&amp;gt;str); return s; } class Editstring : public String { private: unsigned int cursor; //定义一个指示位置的光标 public: /** * 正常情况应判断cur是否&amp;gt;=0,&amp;lt;length(str),此处主要表现算法，省略之, * 后续插入替换也应当先判断光标的位置，本题省略错误处理 */ void setCursor(int cur) { this-&amp;gt;cursor = cur; } bool insert(char* substr); //在光标位置插入字符串 bool replace(int num, char* substr); //将光标的num个字符组成的字符串替换成str bool remove(int num); //在光标处删除num个字符组成的字符串 }; bool Editstring::insert(char* substr) { int sublength = strlen(substr); //要插入子串的长度 int length = strlen(this-&amp;gt;str); //原始字符串长度 for(int i=length+sublength-1; i&amp;gt;this-&amp;gt;cursor+sublength; i--) { this-&amp;gt;str[i] = this-&amp;gt;str[i-sublength]; } for(int j=1; j&amp;lt;=sublength; j++) { this-&amp;gt;str[this-&amp;gt;cursor+j] = substr[j-1]; } return true; } bool Editstring::replace(int num, char* substr) { int sublength = strlen(substr); int length = strlen(this-&amp;gt;str); for(int i=this-&amp;gt;cursor + num + 1; i &amp;lt;= length; i++) { this-&amp;gt;str[i - num] = this-&amp;gt;str[i]; } this-&amp;gt;insert(substr); return true; } bool Editstring::remove(int num) { int length = strlen(this-&amp;gt;str); for(int i=this-&amp;gt;cursor; i&amp;lt;= length; i++) { this-&amp;gt;str[i-num] = this-&amp;gt;str[i]; } return true; } int main() { String s1; char c1[] = &amp;quot;hello world&amp;quot;; s1.</description>
+    </item>
+    
+  </channel>
+</rss>
