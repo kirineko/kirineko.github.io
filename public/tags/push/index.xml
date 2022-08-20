@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>push on kirineko&#39;s blog</title>
+    <link>https://kirineko.github.io/tags/push/</link>
+    <description>Recent content in push on kirineko&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://kirineko.github.io/tags/push/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多通道推送系统研究——推送系统接入启示录</title>
+      <link>https://kirineko.github.io/post/2015-11-26-duo-tong-dao-tui-song-xi-tong-yan-jiu/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-26-duo-tong-dao-tui-song-xi-tong-yan-jiu/</guid>
+      <description>上周开发多通道推送遇到了很多&amp;rsquo;惊喜&amp;rsquo;，在这里总结一下</description>
+    </item>
+    
+  </channel>
+</rss>

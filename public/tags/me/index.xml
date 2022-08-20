@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Me on kirineko&#39;s blog</title>
+    <link>https://kirineko.github.io/tags/me/</link>
+    <description>Recent content in Me on kirineko&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://kirineko.github.io/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Love Yuko</title>
+      <link>https://kirineko.github.io/post/2017-03-11-i-love-yuko/</link>
+      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2017-03-11-i-love-yuko/</guid>
+      <description>有时候，沉浸在自我的世界中&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>新年试更</title>
+      <link>https://kirineko.github.io/post/2017-02-09-newyear-update/</link>
+      <pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2017-02-09-newyear-update/</guid>
+      <description>hello,everyone! So long not update!</description>
+    </item>
+    
+    <item>
+      <title>Never be sad and to be yourself</title>
+      <link>https://kirineko.github.io/post/2016-05-03-never-be-sad-and-to-be-yourself/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-03-never-be-sad-and-to-be-yourself/</guid>
+      <description>就连明天的天气也【还是不去知道的好】，这样想着放下了伞，</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://kirineko.github.io/post/2015-11-25-about-me/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-25-about-me/</guid>
+      <description>kirineko的自我介绍</description>
+    </item>
+    
+    <item>
+      <title>Introduction——暗黑魔法之地介绍</title>
+      <link>https://kirineko.github.io/post/2015-11-25-introduction/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-25-introduction/</guid>
+      <description>世界上本来就没有魔法使这种东西，魔法更准确的说应该是魔术。</description>
+    </item>
+    
+  </channel>
+</rss>

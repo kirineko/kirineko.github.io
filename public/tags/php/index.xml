@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on kirineko&#39;s blog</title>
+    <link>https://kirineko.github.io/tags/php/</link>
+    <description>Recent content in php on kirineko&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 04 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://kirineko.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP-Phalcon中的数据库操作</title>
+      <link>https://kirineko.github.io/post/2016-05-03-php-phalconzhong-de-shu-ju-ku-cao-zuo/</link>
+      <pubDate>Wed, 04 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-03-php-phalconzhong-de-shu-ju-ku-cao-zuo/</guid>
+      <description>这篇文章讨论了PHP-Phalcon框架中的数据库操作方法。</description>
+    </item>
+    
+    <item>
+      <title>How to Define a Fraction Class</title>
+      <link>https://kirineko.github.io/post/2016-05-03-how-to-define-a-fraction-class/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-03-how-to-define-a-fraction-class/</guid>
+      <description>一个来自于C++程序设计的经典问题。</description>
+    </item>
+    
+    <item>
+      <title>多通道推送系统研究——推送系统接入启示录</title>
+      <link>https://kirineko.github.io/post/2015-11-26-duo-tong-dao-tui-song-xi-tong-yan-jiu/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-26-duo-tong-dao-tui-song-xi-tong-yan-jiu/</guid>
+      <description>上周开发多通道推送遇到了很多&amp;rsquo;惊喜&amp;rsquo;，在这里总结一下</description>
+    </item>
+    
+  </channel>
+</rss>

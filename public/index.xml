@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kirineko&#39;s blog</title>
+    <link>https://kirineko.github.io/</link>
+    <description>Recent content on kirineko&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://kirineko.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Love Yuko</title>
+      <link>https://kirineko.github.io/post/2017-03-11-i-love-yuko/</link>
+      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2017-03-11-i-love-yuko/</guid>
+      <description>有时候，沉浸在自我的世界中&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>新年试更</title>
+      <link>https://kirineko.github.io/post/2017-02-09-newyear-update/</link>
+      <pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2017-02-09-newyear-update/</guid>
+      <description>hello,everyone! So long not update!</description>
+    </item>
+    
+    <item>
+      <title>一个C&#43;&#43;题目</title>
+      <link>https://kirineko.github.io/post/2016-05-08-cppcode/</link>
+      <pubDate>Sun, 08 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-08-cppcode/</guid>
+      <description>一个C++题目——简易文本编辑器</description>
+    </item>
+    
+    <item>
+      <title>PHP-Phalcon中的数据库操作</title>
+      <link>https://kirineko.github.io/post/2016-05-03-php-phalconzhong-de-shu-ju-ku-cao-zuo/</link>
+      <pubDate>Wed, 04 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-03-php-phalconzhong-de-shu-ju-ku-cao-zuo/</guid>
+      <description>这篇文章讨论了PHP-Phalcon框架中的数据库操作方法。</description>
+    </item>
+    
+    <item>
+      <title>How to Define a Fraction Class</title>
+      <link>https://kirineko.github.io/post/2016-05-03-how-to-define-a-fraction-class/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-03-how-to-define-a-fraction-class/</guid>
+      <description>一个来自于C++程序设计的经典问题。</description>
+    </item>
+    
+    <item>
+      <title>Never be sad and to be yourself</title>
+      <link>https://kirineko.github.io/post/2016-05-03-never-be-sad-and-to-be-yourself/</link>
+      <pubDate>Tue, 03 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-03-never-be-sad-and-to-be-yourself/</guid>
+      <description>就连明天的天气也【还是不去知道的好】，这样想着放下了伞，</description>
+    </item>
+    
+    <item>
+      <title>迷案风云</title>
+      <link>https://kirineko.github.io/post/2016-04-06-mi-an-feng-yun/</link>
+      <pubDate>Wed, 06 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-04-06-mi-an-feng-yun/</guid>
+      <description>2016年4月初，在我身上发生了一起诡异的迷案。</description>
+    </item>
+    
+    <item>
+      <title>人机大战启示录</title>
+      <link>https://kirineko.github.io/post/2016-03-15-ren-ji-da-zhan-qi-shi-lu/</link>
+      <pubDate>Tue, 15 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-03-15-ren-ji-da-zhan-qi-shi-lu/</guid>
+      <description>纪念神之一手</description>
+    </item>
+    
+    <item>
+      <title>Steins;Gateの選択——纪念命运石之门0完结</title>
+      <link>https://kirineko.github.io/post/2016-03-14-steins-gatefalsexuan-ze/</link>
+      <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-03-14-steins-gatefalsexuan-ze/</guid>
+      <description>すべてはSteins;Gateの選択だ。</description>
+    </item>
+    
+    <item>
+      <title>诸事有感</title>
+      <link>https://kirineko.github.io/post/2015-12-14-zhu-shi-you-gan/</link>
+      <pubDate>Mon, 14 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-12-14-zhu-shi-you-gan/</guid>
+      <description>有些人活着，它已经死了；有些人死了，他还活着。</description>
+    </item>
+    
+    <item>
+      <title>ruby中的三大框架——rails,sinatra,grape</title>
+      <link>https://kirineko.github.io/post/2015-11-28-rubyzhong-de-san-da-kuang-jia/</link>
+      <pubDate>Sat, 28 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-28-rubyzhong-de-san-da-kuang-jia/</guid>
+      <description>ruby中的三大框架——rails,sinatra,grape</description>
+    </item>
+    
+    <item>
+      <title>多通道推送系统研究——推送系统接入启示录</title>
+      <link>https://kirineko.github.io/post/2015-11-26-duo-tong-dao-tui-song-xi-tong-yan-jiu/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-26-duo-tong-dao-tui-song-xi-tong-yan-jiu/</guid>
+      <description>上周开发多通道推送遇到了很多&amp;rsquo;惊喜&amp;rsquo;，在这里总结一下</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://kirineko.github.io/post/2015-11-25-about-me/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-25-about-me/</guid>
+      <description>kirineko的自我介绍</description>
+    </item>
+    
+    <item>
+      <title>Introduction——暗黑魔法之地介绍</title>
+      <link>https://kirineko.github.io/post/2015-11-25-introduction/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2015-11-25-introduction/</guid>
+      <description>世界上本来就没有魔法使这种东西，魔法更准确的说应该是魔术。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kirineko.github.io/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/readme/</guid>
+      <description>👋, Welcome -&amp;gt; kirineko A Web Developer 基本设定 ℹ️ kirineko, 设定是白魔法程序喵, 热爱Web世界里的一切, 也热爱二次元, 信仰是: 代码改变世界
+🤩 喜欢废萌和傲娇, 同时自己可能也是傲娇(bushi
+💕 已有主人, 主人是2.5次元技术宅美少女「yukosama」
+🤔 常活跃于一些奇奇怪怪的技术(伪)论坛和社区, CP是某不科学的小黑客「HosiRen星涟」
+✉️ kirineko并不讨厌人类, 欢迎和咱贴贴. 联系方式是: echo &#39;Nzk4MzYwNjg3QHFxLmNvbQo=&#39; | base64 -d
+技术设定 🌐 Fullstack Web Developer
+🖥 技术栈
+「语言」Python &amp;gt; JavaScript | PHP 「平台」Ubuntu Linux ｜Caddy | MySQL | Redis 「框架」Flask = Bottle &amp;gt; Vue &amp;gt; React 👍🏻 喜欢的语言: C#[2012] -&amp;gt; Ruby[2015] -&amp;gt; Python 3[2020]
+👎 不喜欢的语言: Java</description>
+    </item>
+    
+  </channel>
+</rss>

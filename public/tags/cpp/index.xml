@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpp on kirineko&#39;s blog</title>
+    <link>https://kirineko.github.io/tags/cpp/</link>
+    <description>Recent content in cpp on kirineko&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 08 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://kirineko.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一个C&#43;&#43;题目</title>
+      <link>https://kirineko.github.io/post/2016-05-08-cppcode/</link>
+      <pubDate>Sun, 08 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/2016-05-08-cppcode/</guid>
+      <description>一个C++题目——简易文本编辑器</description>
+    </item>
+    
+  </channel>
+</rss>
