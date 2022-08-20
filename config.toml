@@ -1,0 +1,28 @@
+baseURL = "https://kirineko.github.io/"
+languageCode = "zh-cn"
+title = "kirineko's blog"
+theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = "kirineko"
+  description = "Make the Web Fun Again."
+  github = "kirineko"
+  email = "kirineko@qq.com"
+  url = "https://kirineko.github.io/"
+  keywords = "blog"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "😱"
+  favicon = "/images/github.png"
+  location = "China"
+  avatar = "/images/cats.webp"
+
+  [[params.links]]
+    title = "cnblogs"
+    href = "https://www.cnblogs.com/kassadin/"
+
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
