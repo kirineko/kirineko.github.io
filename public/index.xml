@@ -6,7 +6,25 @@
     <description>Recent content on kirineko&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://kirineko.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kirineko.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Dataclasses</title>
+      <link>https://kirineko.github.io/post/python_dataclasses/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/python_dataclasses/</guid>
+      <description>Python Dataclass</description>
+    </item>
+    
+    <item>
+      <title>Python类型的设计意图</title>
+      <link>https://kirineko.github.io/post/python_type_intentions/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kirineko.github.io/post/python_type_intentions/</guid>
+      <description>Python中几种常用类型的设计意图</description>
+    </item>
+    
     <item>
       <title>I Love Yuko</title>
       <link>https://kirineko.github.io/post/2017-03-11-i-love-yuko/</link>
