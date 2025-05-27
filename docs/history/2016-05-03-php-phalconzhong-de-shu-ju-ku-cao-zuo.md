@@ -174,7 +174,7 @@ public function findAction()
 }
 ```
 
-调用<Model>类的静态方法find()会返回包含有customer数据表内容的结果集，对于结果集的处理通常采用foreach进行遍历，如代码所示，对遍历的每一个对象调取属性值，然后赋值给关联数组。
+调用`<Model>`类的静态方法find()会返回包含有customer数据表内容的结果集，对于结果集的处理通常采用foreach进行遍历，如代码所示，对遍历的每一个对象调取属性值，然后赋值给关联数组。
 
 **2.findFirst方法**
 
