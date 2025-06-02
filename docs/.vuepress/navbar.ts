@@ -13,6 +13,9 @@ export default defineNavbarConfig([
   { text: '归档', link: '/blog/archives/' },
   {
     text: '笔记',
-    items: [{ text: 'Mordern C++', link: '/notes/cpp/README.md' }]
+    items: [
+      { text: 'Mordern C++', link: '/notes/cpp/README.md' },
+      { text: 'Unreal Engine', link: '/notes/ue/README.md' },
+    ]
   },
 ])

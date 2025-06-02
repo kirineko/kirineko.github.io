@@ -42,6 +42,15 @@ const cppNote = defineNoteConfig({
   // sidebar: 'auto',
 })
 
+const ueNote = defineNoteConfig({
+  dir: 'ue',
+  link: '/ue',
+  // 手动配置侧边栏结构
+  sidebar: ['', '入门', 'Mac操作指引', '蓝图'],
+  // 根据文件结构自动生成侧边栏
+  // sidebar: 'auto',
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -50,5 +59,5 @@ const cppNote = defineNoteConfig({
 export default defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [demoNote, cppNote],
+  notes: [demoNote, cppNote, ueNote],
 })
