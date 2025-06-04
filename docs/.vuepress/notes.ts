@@ -46,7 +46,7 @@ const ueNote = defineNoteConfig({
   dir: 'ue',
   link: '/ue',
   // 手动配置侧边栏结构
-  sidebar: ['', '入门', 'Mac操作指引', '蓝图'],
+  sidebar: ['', '入门', 'Mac操作指引', '蓝图', '概念指南'],
   // 根据文件结构自动生成侧边栏
   // sidebar: 'auto',
 })
